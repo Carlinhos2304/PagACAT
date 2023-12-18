@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar  {
+    background-color: #0833a2 !important; /*asegura que este estilo se aplique incluso si hay otros estilos que intenten sobrescribirlo.*/
+    height: 100px;
+}
+
+
+
+.container-formulario {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .container-formulario label {
+    font-weight: bold;
+  }
+  
+  .container-formulario .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container-formulario textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container-formulario .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .container-formulario .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #0833a2;
+    color: #fff;
+    padding: 20px 20px; /* Ajusta el padding según lo que necesites */
+    display: flex;
+    align-items: center;
+    height: 100px; /* Ajusta la altura según lo que necesites */
+    height: 200px;
+    margin-top: 100px;
+}
+
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    width: 200%;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: 110px; /* Ajusta el tamaño de tu logo según sea necesario */
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    margin-right: 20px;
+    text-align: center;
+    margin-left: -11px;
+}
+.footer-copyright {
+    font-size: 0.8em;
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .footer-links a {
+        margin-bottom: -10px;
+    }
+}
+
+/* fin cambios footer*/
+
+
+
+
+.navbar.navbar-expand-md.navbar-dark.bg-dark {
+    background-color: #0833a2 !important;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.navbar-brand img {
+    max-height: 70px;
+    max-width: 100%;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Lora', sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    transition: transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+}
+
+.destacado {
+    font-weight: bold;
+    color: #0833a2;
+}
+
+@media (max-width: 767px) {
+    .navbar.navbar-expand-md.navbar-dark.bg-dark {
+        height: 310px;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-collapse {
+        margin-left: 560px; /* Ajusta este valor según tu preferencia */
+    }
+}
+
+
+.special-text {
+    color: white; /* Color blanco original del texto */
+    font-weight: bold;
+     /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+}
+
+/* Animación para el cambio de color y efecto de desvanecimiento */
+@keyframes shine {
+    0% {
+        color: white; /* Color inicial */
+        text-shadow: none; /* Sin sombra en el inicio */
+    }
+    50% {
+        color: gold; /* Cambio a color dorado a la mitad de la animación */
+        text-shadow: 0 0 10px gold; /* Agrega una sombra dorada */
+    }
+    100% {
+        color: white; /* Vuelve al color blanco al final de la animación */
+        text-shadow: none; /* Sin sombra al final */
+    }
+}
+
+
+/* Aplica la animación a la clase 'special-text' */
+.special-text {
+    animation: shine 2s infinite; /* La animación dura 2 segundos y se repite infinitamente */
+}
+
+
+
+
+
+

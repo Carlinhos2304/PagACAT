@@ -1,0 +1,1328 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+header{
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    background-color: #0833a2 !important; /*asegura que este estilo se aplique incluso si hay otros estilos que intenten sobrescribirlo.*/
+    height: 100px;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+      height: 310px; /* Cambia el tamaño del nav para dispositivos móviles */
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+      margin-left: 540px; /* Ajusta el valor según tu preferencia */
+    }
+  }
+  
+  
+
+
+.nosotros, .servicios
+{
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.carousel-caption {
+    font-size: 2em;
+    background-color: rgba(87, 92, 95, 0.4); /* Fondo semi-transparente */
+    position: absolute; 
+    right: 15%;
+    top: 125px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    bottom: auto;
+}
+
+
+
+
+.carousel-caption h5{
+    font-size: 3em;
+    
+
+}
+.carrusel-indicators{
+    z-index: 2;
+}
+
+
+.parrafo-carrusel {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium */
+  }
+  
+
+
+
+.titulo-carrusel {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+  }
+  
+.carousel-item {
+    height: 480px;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption {
+        font-size: 13px; /* Ajusta el tamaño de la fuente según tu preferencia */
+    }
+
+    .titulo-carrusel {
+        font-size: 24px; /* Ajusta el tamaño de la fuente del título según tu preferencia */
+    }
+}
+
+
+/* cambio de letras del Nav */
+
+.navbar-nav .nav-link {
+    font-family: 'Lora', sans-serif;
+    font-weight: normal;
+    color: #ffffff; /* Color blanco */
+    transition: transform 0.3s; /* Añadimos una transición de 0.3 segundos en la propiedad transform */
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1); /* Cuando el mouse pasa sobre el enlace, lo escalamos al 110% del tamaño original */
+}
+
+.destacado {
+    font-weight: bold; /* Hace que el texto sea más audaz */
+    color: #0833a2; /* Cambia el color del texto a un tono naranja, puedes elegir el color que prefieras */
+}
+
+
+/* Letras Mision y Vision*/
+
+.destacado {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; /* Aquí usamos 'bold' para especificar la versión Bold de la fuente */
+    
+}
+  
+  
+p {
+    font-family: 'Montserrat', sans-serif; /* Aplica la tipografía Montserrat para todo el párrafo */
+    font-weight: normal; /* Asegura que se use la versión regular de la fuente */
+    font-size: 20px;
+}
+
+
+.img-fluid.mx-auto {
+    margin-left: 90px !important; /* Ajusta el valor según tu preferencia */
+    margin-top: 36px; /* Ajusta el valor según tu preferencia */
+}
+
+.img-fluid.mx-auto1 {
+    margin-left: 80px !important; /* Ajusta el valor según tu preferencia */
+    margin-top: -46px; /* Ajusta el valor según tu preferencia */
+}
+
+
+@media (max-width: 767px) {
+    .img-fluid.mx-auto1 {
+      margin-top: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .img-fluid.mx-auto {
+      margin-left: 70px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .nosotros .text-center.my-5 {
+      margin-top: 100px !important; /* Ajusta el valor según tu preferencia */
+    }
+  }
+  
+
+
+  
+
+.nosotros p {
+    margin-bottom: 1rem; /* Ajusta el espacio entre párrafos */
+}
+
+.nosotros .col-12 img {
+    margin-bottom: 1rem; /* Ajusta el espacio debajo de las imágenes */
+}
+
+
+
+
+
+
+
+/* CSS QUIENES SOMOS*/
+
+.zoom-card {
+    transition: transform 0.3s;
+}
+
+.card-img-zoom {
+    transition: transform 0.3s;
+}
+
+.zoom-card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-zoom:hover {
+    transform: scale(1.2);
+}
+
+
+.card-img-top {
+    height: 400px; /* Puedes ajustar este valor según lo necesites */
+    object-fit: cover;
+}
+
+.card-body h5{
+    font-family: 'Lora', sans-serif;
+}
+
+.card-body p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+.modal-header h5{
+    font-family: 'Lora', sans-serif;
+}
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .banner-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(117, 114, 114, 0.5);
+    padding: 20px;
+   
+  }
+  
+  .titulo-banner {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+.banner-caption {
+    transition: background-color 0.3s;
+ }
+  
+.banner-caption:hover {
+    background-color: rgba(117, 116, 116, 0.7);
+}
+  
+.titulo-banner {
+    text-shadow: 2px 2px 4px rgba(100, 97, 97, 0.8);
+}
+
+
+
+
+/* Estilo para los párrafos */
+.quienes-somos p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los títulos */
+.quienes-somos h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los contenedores */
+.quienes-somos .container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el fondo de la sección */
+.quienes-somos {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+/* ZOOM TARJETAS*/
+
+
+
+
+/*EFECTO AL ABRIR*/
+
+.modal.fade .modal-dialog {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal.fade.show .modal-dialog {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+
+
+
+/* BANNER QUIENES SOMOS*/
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%); /* Ajusta el brillo de la imagen */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+
+.banner-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Sombra al texto para mejor legibilidad */
+}
+
+.titulo-banner {
+    font-family: 'Lora', serif; /* Fuente del texto */
+    font-weight: bold;
+    font-size: 4em; /* Tamaño del texto */
+    margin-bottom: 10px;
+}
+
+.parrafo-banner {
+    font-family: 'Montserrat', sans-serif; /* Fuente del texto */
+    font-weight: 400;
+    font-size: 1.2em; /* Tamaño del texto */
+    max-width: 600px; /* Ancho máximo del texto */
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #0833a2;
+    color: #fff;
+    padding: 20px 20px; /* Ajusta el padding según lo que necesites */
+    display: flex;
+    align-items: center;
+    height: 100px; /* Ajusta la altura según lo que necesites */
+    height: 200px;
+    margin-top: 323px;
+}
+
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    width: 200%;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: 110px; /* Ajusta el tamaño de tu logo según sea necesario */
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    margin-right: 20px;
+    text-align: center;
+    margin-left: -11px;
+}
+
+.footer-copyright {
+    font-size: 0.8em;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 300px;
+    height: 15vh; /* Centra verticalmente en la ventana */
+}
+
+#centered-paragraph {
+    text-align: center;
+    font-size: 24px;
+}
+
+#centered-paragraph2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* galeria lightbox */
+
+.container-grid{
+    display: grid;
+    height: 100vh;
+    margin: 50px 80px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "img1 img2 img3 img3 img3"
+    "img1 img2 img3 img3 img3";
+    gap: 5px;
+    z-index: 5;
+}
+
+.container-grid2{
+    display: grid;
+    height: 100vh;
+    margin: 50px 80px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas: 
+    "img1 img2 img3 img3 img3"
+    "img1 img2 img3 img3 img3"
+    "img4 img4 img3 img3 img3"
+    "img4 img4 img3 img3 img3"
+    "img0 img5 img5 img5 img9"
+    "img0 img5 img5 img5 img9";
+    gap: 5px;
+    z-index: 5;
+}
+
+.container-grid3{
+    display: grid;
+    height: 100vh;
+    margin: 50px 80px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "img1 img2 img3 img3 img3"
+    "img1 img2 img3 img3 img3"
+    "img4 img4 img3 img3 img3"
+    "img4 img4 img3 img3 img3"
+    "img6 img6 img5 img5 img5"
+    "img6 img6 img5 img5 img5";
+    gap: 5px;
+    z-index: 5;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.img:hover{
+    filter: grayscale(100%);
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.img-1{
+    grid-area: img1;
+}
+
+.img-2{
+    grid-area: img2;
+}
+
+.img-3{
+    grid-area: img3;
+}
+
+.img-4{
+    grid-area: img4;
+}
+
+.img-5{
+    grid-area: img5;
+}
+
+.img-6{
+    grid-area: img6;
+}
+
+.container-img{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .4s ease-in;
+}
+
+
+.move{
+    transform: translateX(0);
+}
+
+.img-show{
+    height: 80%;
+    transform: scale(0);
+    display: block;
+    object-fit: cover;
+    transition: transform .2s .4s;
+    border-radius: 5px;
+}
+
+.show{
+    transform: scale(1);
+}
+
+.copy{
+    position: fixed;
+    color: #fff;
+    bottom: 20px;
+}
+
+.bx.bx-x{
+    position: absolute;
+    color: #fff;
+    top: 20px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+
+/*Lista de objetivos negrospirituals*/
+#lista3 {
+    counter-reset: li; 
+    list-style: none; 
+    list-style: decimal; 
+    font-family: 'Raleway', sans-serif;
+    margin: 30px 300px;
+    font: 25px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 5em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+#lista3 ol {
+    margin: 0 0 0 5em; 
+}
+
+#lista3 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #6e6e6e;
+    text-decoration: none;
+    transition: all .3s ease-out;   
+}
+
+#lista3 li:hover{
+    background: #eee;
+}   
+
+#lista3 li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #0833a2;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#lista3 li:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+#lista3 li:hover:after{
+    left: -.5em;
+    border-left-color: #0833a2;             
+}
+
+@media screen and (max-width:700px){
+    .img-show{
+        width: 90%;
+    }
+
+    .copy{
+        bottom: 10px;
+    }
+
+    .bx.bx-x{
+        top: 10px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .container-grid {
+        display: grid;
+        height: 50vh;
+        margin: 10px 10px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: "img1 img2 img3";
+    }
+    .container-grid2 {
+        display: grid;
+        height: 70vh;
+        margin: 10px 10px;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas:
+            "img1 img1 img2 img2 img3 img3"
+            "img1 img1 img2 img2 img3 img3"
+            "img4 img4 img4 img5 img5 img5"
+            "img4 img4 img4 img5 img5 img5";
+        gap: 2px;
+        z-index: 5;
+    }
+    .container-grid3{
+        display: grid;
+        height: 90vh;
+        margin: 10px 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "img1 img1 img2 img2"
+        "img1 img1 img2 img2"
+        "img3 img3 img4 img4"
+        "img3 img3 img4 img4"
+        "img5 img5 img6 img6"
+        "img5 img5 img6 img6"
+        ;
+        gap: 2px;
+        z-index: 5;
+    }
+}
+
+@media screen and (max-width:767px){
+    .row{
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-top: var(--bs-gutter-y);
+        text-align: justify; /* Alinea el texto justificado */
+        width: 100%; /* Ajusta el ancho del contenedor según tu preferencia */
+        margin: 0 auto;
+    }
+    
+}
+
+
+/* CSS NEGRO SPIRITUALS MEJORADOS */
+
+/* Estilo base para el texto */
+.special-text {
+    color: white; /* Color blanco original del texto */
+    font-weight: bold;
+     /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+}
+
+/* Animación para el cambio de color y efecto de desvanecimiento */
+@keyframes shine {
+    0% {
+        color: white; /* Color inicial */
+        text-shadow: none; /* Sin sombra en el inicio */
+    }
+    50% {
+        color: gold; /* Cambio a color dorado a la mitad de la animación */
+        text-shadow: 0 0 10px gold; /* Agrega una sombra dorada */
+    }
+    100% {
+        color: white; /* Vuelve al color blanco al final de la animación */
+        text-shadow: none; /* Sin sombra al final */
+    }
+}
+
+
+/* Aplica la animación a la clase 'special-text' */
+.special-text {
+    animation: shine 2s infinite; /* La animación dura 2 segundos y se repite infinitamente */
+}
+
+
+
+
+
+#contenidoAdicional {
+    display: none;
+    margin-top: 10px;
+}
+
+.btn .leer-mas, .ocultar-texto {
+    background-color: #0833a2; /* Color azul de tu barra de navegación */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ocultar-texto {
+    display: none; /* Oculta el botón "Ocultar texto" inicialmente */
+    
+}
+
+
+/* TARJETAS DE INFORMACION MAS CSS */
+
+.info-imagen h2 {
+    /* Estilos regulares del título de las tarjetas */
+    color: #0833a2;
+    font-size: 2.5rem;
+    font-weight: 650;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Agrega una sombra al texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Añade una transición suave */
+    transition: color 0.3s ease;
+}
+
+.info-imagen h2:hover {
+    /* Cambia el color del texto en el hover */
+    color: #3f6b94; /* Color amarillo para el hover */
+}
+
+/* CSS TARJETAS DE INFORMACION */
+.info-section-nuevo {
+    padding: 50px 0;
+    background-color: #f8f8f8; /* Cambia el color de fondo  */
+    margin-top: 200px;
+}
+
+.info-imagen img {
+    width: 370px;
+    border-radius: 10px;
+    margin-left: 300px;
+    transition: transform 0.3s ease;
+}
+
+/* Aplica el efecto de zoom en el hover */
+.info-imagen img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .info-imagen img {
+        margin-left: 100px;
+        margin-top: 30px;
+        width: 60%;
+    }
+}
+
+.info-imagen p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 410;
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para la sección de Quiénes Somos NEGRO ESPIRITUALS */
+
+.quienes-somos-negro {
+    background-color: #f4f4f4; /* Fondo gris claro */
+    padding: 80px 0; /* Espaciado interno */
+}
+
+.quienes-somos-negro h2 {
+    color: #0833a2; /* Color del título oscuro */
+    text-align: center;
+    font-size: 36px; /* Tamaño del título */
+    margin-bottom: 40px; /* Espaciado inferior del título */
+    font-family:  'Lora', serif;
+}
+
+.quienes-somos-negro h2 {
+    animation: shinee 3s infinite;
+}
+
+@keyframes shinee {
+    0% {
+        color: #0833a2; /* Color inicial */
+        text-shadow: none; /* Sin sombra en el inicio */
+    }
+    50% {
+        color: #0833a2; /* Cambio a negro a la mitad de la animación */
+        text-shadow: 0 0 10px #6b6b6b; /* Agrega una sombra negra */
+    }
+    100% {
+        color: #0833a2; /* Vuelve al color #0833a2 al final de la animación */
+        text-shadow: none; /* Sin sombra al final */
+    }
+}
+
+.descripcion-directores-negro {
+    font-weight: bold; /* Hace que el texto sea negrita */
+    color: #26282b; /* Color de texto azul */
+    margin-bottom: 10px; /* Agrega un espacio en la parte inferior para separar de otros elementos */
+    margin-left: 25px;
+    font-size: 19px;
+}
+
+
+
+.card-container-negro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+}
+
+.card-negro {
+    width: 300px; /* Puedes ajustar este valor según tus necesidades */
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+
+}
+
+@media (max-width: 767px) {
+    .card-negro{
+        margin-left: 100px !important;
+        margin: 25px;
+        
+    }
+}
+
+
+.card-negro:hover {
+    transform: scale(1.03); /* Efecto de escala al pasar el mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.card-negro img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.card-negro h3 {
+    color: #333; /* Color del título oscuro */
+    font-size: 24px; /* Tamaño del título de la tarjeta */
+    margin-top: 15px; /* Espaciado superior del título */
+    font-family: 'Lora', serif;
+}
+
+.card-negro p {
+    color: #555; /* Color del texto gris oscuro */
+    font-size: 16px; /* Tamaño del texto de la tarjeta */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+
+
+
+/* Estilos para el área adicional en las tarjetas */
+.card-details-nuevo {
+    display: none;
+    margin-top: 15px;
+}
+
+
+
+.card-details-nuevo h4{
+    font-family: 'Lora', serif;
+    border-bottom: 2px solid #3498db; /* Cambia el color según tu preferencia */
+    padding-bottom: 5px; /* Espaciado opcional para mayor separación */
+    position: relative;
+}
+
+.card-details-nuevo h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #3498db, transparent);
+    animation: shines 1.5s infinite linear;
+}
+
+@keyframes shines {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+
+
+
+/* BOTONES DE OCULTAR Y LEER MAS DE QUIENES SOMOS */
+
+/* Estilos para el botón "Leer más" */
+.card-negro .btn-primarys {
+    background-color: #3498db; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor apuntador al pasar el ratón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+
+    /* Añade cualquier otro estilo que desees */
+}
+
+.card-negro .btn-primarys:hover {
+    background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilos para el botón "Ocultar texto" */
+.card-negro .btn-secondarys {
+    background-color: #e74c3c; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor apuntador al pasar el ratón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+
+    /* Añade cualquier otro estilo que desees */
+}
+
+.card-negro .btn-secondarys:hover {
+    background-color: #c0392b; /* Cambia el color de fondo al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+/* Estilos para las tarjetas */
+.card-negro {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.card-negro:hover {
+    transform: scale(1.03); /* Escala ligeramente menor que 1.05 para un efecto más suave */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 0.9; /* Reducir la opacidad al pasar el ratón para un efecto más suave */
+}
+
+/* Estilos adicionales para el efecto de brillo dinámico */
+@keyframes shinees {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}
+
+.card-negro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background-size: 200% 100%;
+    animation: shinees 4s infinite linear;
+    pointer-events: none;
+}
+
+
+
+
+/* Estilos para la sección de Nuestros Objetivos */
+
+.nuestros-objetivos {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    padding: 80px 0; /* Espaciado interno */
+    font-family: 'Lora', serif;
+}
+
+.nuestros-objetivos h2 {
+    color: #333; /* Color del título oscuro */
+    text-align: center;
+    font-size: 36px; /* Tamaño del título */
+    margin-bottom: 40px; /* Espaciado inferior del título */
+    position: relative; /* Establecer posición relativa para el título */
+}
+
+.nuestros-objetivos h2::after {
+    content: ""; /* Contenido generado */
+    display: block; /* Mostrar como bloque */
+    height: 4px; /* Grosor de la línea subrayada */
+    position: absolute; /* Establecer posición absoluta con respecto al título */
+    bottom: -10px; /* Colocar 10px por encima de la parte inferior del título */
+    left: 50%; /* Alinear con el centro del título */
+    width: 300px; /* Ancho del subrayado */
+    background: linear-gradient(to right, rgba(0, 153, 255, 0.8), rgba(64, 115, 141, 0.8)); /* Degradado con transparencia */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+}
+
+
+.objetivo {
+    margin-bottom: 40px; /* Espaciado inferior entre objetivos */
+    border: 1px solid #ddd; /* Borde del objetivo */
+    padding: 20px; /* Espaciado interno del objetivo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.objetivo:hover {
+    transform: scale(1.03); /* Efecto de escala al pasar el mouse */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+}
+
+.objetivo h3 {
+    color: #0056b3; /* Color del título azul */
+    font-size: 26px; /* Tamaño del título del objetivo */
+    margin-bottom: 15px; /* Espaciado inferior del título */
+}
+
+.objetivo p {
+    color: #555; /* Color del texto gris oscuro */
+    font-size: 18px; /* Tamaño del texto del objetivo */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+
+.objetivo ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+.objetivo ul li {
+    color: #000000; /* Color del texto verde */
+    font-size: 18px; /* Tamaño del texto de la lista */
+    margin-bottom: 8px; /* Espaciado inferior entre elementos de la lista */
+}
+
+
+
+/* CSS PARA FORMULARIO DE DESCARGAR PARTITURAS */
+
+/* Estilo del formulario de descarga */
+.formulario-descarga {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo para las etiquetas del formulario */
+
+
+/* Estilo del formulario de descarga */
+.formulario-descarga {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilo para las etiquetas del formulario */
+.etiqueta-formulario {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Estilo para los campos del formulario */
+.campo-formulario {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de descarga */
+.boton-descarga {
+    background-color: #007bff;
+    color: #fff;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    display: inline-block; /* Cambiado a en línea para que no sea un bloque completo */
+}
+
+/* Cambio de color de fondo al pasar el ratón sobre el botón */
+.boton-descarga:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo adicional para un título más llamativo */
+.formulario-descarga h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+/* CSS fin css DE FORMULARIO DE DESCARGAR PARTITURAS */
+
+
+/* CSS MENSAJE DE EXITO PHP */
+
+body.exito-php {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.msg-exito {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.msg-exito h1 {
+    color: #007BFF;
+}
+
+.msg-exito p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos del botón de regreso */
+.boton-regresar-exito {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.boton-regresar-exito:hover {
+    background-color: #0056b3;
+}
+
+/* FIN DE EXITO PHP */
+
+
+/* MENSAJE DIRECCION DE CORREO INVALIDAS*/
+#mensaje-error {
+    color: #d9534f; /* Color de fondo del mensaje (rojo) */
+    padding: 10px; /* Espaciado interno del mensaje */
+    margin-top: 10px; /* Espaciado superior del mensaje */
+    border-radius: 4px; /* Borde redondeado del mensaje */
+    text-align: center; /* Alineación del texto en el mensaje */
+    
+}
+
+/* FIN DE DIRECCIO NDE CORREO INVALIDAS*/
+
+
+/* LOGIN ADMIN CSS*/
+
+.wrapper {
+    max-width: 350px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+.logo-admin {
+    width: 80px;
+    margin: auto;
+    padding-top: 15%;
+}
+
+.logo-admin img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #5f5f5f,
+        0px 0px 0px 5px #ecf0f3,
+        8px 8px 15px #a7aaa7,
+        -8px -8px 15px #fff;
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+.wrapper a:hover {
+    color: #039BE5;
+}
+
+@media(max-width: 380px) {
+    .wrapper {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}
+.mensaje-errorAdmin {
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* fin ADMIN CSS*/
+
+

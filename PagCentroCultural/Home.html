@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ACAT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="icon" href="/imgLogo/Logotipo circular blanco.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+        <a class="navbar-brand" href="Home.html">
+          <img src="imgLogo/logo.png" alt="Logo" style="max-height: 70px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="QuienesSomos.html">¿Quiénes Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active special-text" aria-current="page" href="NegroSpirituals.html">
+                Negro Spirituals
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Asociate.html">Asóciate</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CARRUSEL -->
+    <section class="carrusel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <!-- Cambié data-bs-ride="false" a data-bs-ride="carousel" -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/c1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5 class="titulo-carrusel">Agrupación Cultural Artística De Talcahuano</h5>
+              <p class="parrafo-carrusel">Autenticidad y Pasión por la música coral de los negro spirituals.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/c1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5 class="titulo-carrusel">Canta con Pasión</h5>
+              <p class="parrafo-carrusel">Deja que la música coral de los negro spirituals te inspire y conmueva.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/c1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5 class="titulo-carrusel">Voces que Conmueven</h5>
+              <p class="parrafo-carrusel">Déjate llevar por la profundidad y el poder de la música coral.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <br />
+
+    <section class="nosotros my-5" id="nos">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <h2 class="text-center mb-5">La Agrupación</h2>
+            <!-- Cambié el h2 de lugar y lo puse dentro del div -->
+            <p class="mb-4">
+              La
+              <span class="destacado">Agrupación Cultural Artística de Talcahuano</span>
+              se caracteriza por su autenticidad y pasión por la música coral de los negro spirituals. Es innovadora y
+              vibrante, buscando conectarse con un público diverso sin perder la esencia de su herencia. La personalidad
+              de la marca es inclusiva, siempre abierta a la evolución y comprometida en preservar y promover la rica
+              tradición de los negro spirituals.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              class="img-fluid"
+              src="img/agrupacion.png"
+              alt=""
+              style="max-width: 100%; margin-top: -10px; margin-left: 90px"
+            />
+            <!-- Cambié el estilo del margen y la anchura máxima -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+
+    <!--Separador-->
+    <hr class="separador" />
+
+    <!-- MISION Y VISION-->
+    <section class="nosotros my-5" id="nos">
+      <h2 class="text-center my-5">Misión y Visión</h2>
+      <br />
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <p class="mb-4" style="margin-top: 80px">
+              <span class="destacado">Su Misión</span>
+              es preservar y difundir la herencia cultural de los negrospirituals a través de la enseñanza y la música
+              coral. Se compromete a brindar educación musical de calidad, impartiendo conocimientos y habilidades
+              relacionados con este género musical único. Además de fortalecer la conexión entre las personas y la
+              música, enriqueciendo sus vidas a través de la interpretación y apreciación de los Negro Spirituals.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="img-fluid mx-auto" src="img/mision.jpg" alt="" style="max-width: 70%; border-radius: 20px" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <section class="nosotros my-5" id="vision">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 order-md-2 mb-4 mb-md-0">
+            <p class="mb-4">
+              <span class="destacado">Su Visión</span>
+              es convertirse en un referente global en la promoción y enseñanza de los negro spirituals. Aspira a
+              trascender fronteras, alcanzar audiencias en diversos continentes y ser reconocida como una institución
+              líder en la difusión de la música coral afroamericana. Busca inspirar a una audiencia más joven,
+              manteniendo viva la tradición y la esencia de los negro spirituals en la cultura contemporánea.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 order-md-1">
+            <img class="img-fluid mx-auto1" src="img/vision.jpg" alt="" style="max-width: 70%; border-radius: 20px" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+
+    <!--Separador-->
+    <hr class="separador" />
+    <br><br>
+    <!-- Objetivo Principal-->
+    <section class="nosotros my-5" id="nos">
+      <h2 class="text-center my-5">Objetivo Principal</h2>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-4 mb-md-0" style="margin-top: 80px">
+            <p>
+              Los
+              <span class="destacado">objetivos principales</span>
+              de esta marca es expandir su presencia a nivel global, llevando el género musical a audiencias en
+              diferentes continentes, ser reconocidos como una institución de prestigio en la promoción y enseñanza de
+              la música coral afroamericana, especialmente entre las generaciones más jóvenes e impulsar proyectos
+              artísticos dentro de la agrupación, fomentando la creatividad y la innovación musical entre sus miembros.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              class="img-fluid mx-auto d-block"
+              src="img/Op.jpg"
+              alt=""
+              style="max-width: 70%; border-radius: 20px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+   <br><br>
+
+    <!--Separador-->
+    <hr class="separador" />
+
+
+    <!-- PERSONAS HONORARIAS -->
+    <section class="personas-honorarias my-5" id="personasHonorarias">
+      <div class="container">
+        <h2 class="text-center my-5">Personas Honorarias</h2>
+        <div class="row">
+
+
+          <!-- Persona 1 -->
+          <div class="col-12 col-md-4 my-3">
+            <div class="card text-center">
+              <img src="imgHonorarios/h2.jpg.jpeg" class="card-img-top" alt="Teresa Ahedo G" />
+              <div class="card-body">
+                <h5 class="card-title">Teresa Ahedo G</h5>
+                <p class="card-text">Directora Musical</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPersona1">Más</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Persona 2 -->
+          <div class="col-12 col-md-4 my-3">
+            <div class="card text-center">
+              <img src="img/persona2.jpg" class="card-img-top" alt="Nombre 2" />
+              <div class="card-body">
+                <h5 class="card-title">Nombre 2</h5>
+                <p class="card-text">Breve descripción sobre Nombre 2.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPersona2">Más</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Persona 3 -->
+          <div class="col-12 col-md-4 my-3">
+            <div class="card text-center">
+              <img src="img/persona3.jpg" class="card-img-top" alt="Nombre 3" />
+              <div class="card-body">
+                <h5 class="card-title">Nombre 3</h5>
+                <p class="card-text">Breve descripción sobre Nombre 3.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPersona3">Más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Modales -->
+    <div class="modal fade" id="modalPersona1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Contenido del modal para Persona 1 -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Teresa Ahedo G</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Profesora de Educación Musical, Asume el cargo de Directora Musical Artística de la Institución además como
+            directora del Primer coro que se denomino “Coro Voces Amigas “. Tendrá que hacer todos los esfuerzos para
+            dar vida legal a la naciente Organización, creará todos los talleres necesarios según necesidades de la
+            población.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="modalPersona2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Contenido del modal para Persona 2 -->
+      
+    </div>
+
+    <div class="modal fade" id="modalPersona3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Contenido del modal para Persona 3 -->
+    </div>
+
+
+
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-4 mb-3">
+            <div class="footer-logo text-center">
+              <img src="/imgLogo/Isotipo blanco-8.png" alt="Logo" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="footer-links text-center">
+              <a href="Home.html">Inicio</a>
+              <a href="#">Contacto</a>
+              <a href="#">Términos de Servicio</a>
+              <a href="#">Política de Privacidad</a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="footer-copyright">
+              &copy; 2023 Agrupacion Cultural Artistica De Talcahuano | Todos los derechos reservados
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
