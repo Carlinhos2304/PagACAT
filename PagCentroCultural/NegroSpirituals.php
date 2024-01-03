@@ -295,10 +295,7 @@ session_start(); // Inicia la sesión
                         ?>
                     </div>
                    
-                    
-
-
-    
+                
                     <!-- Número de Celular -->
                     <label for="celular" class="etiqueta-formulario">Número de Celular:</label>
                     <input type="tel" id="celular" name="celular" class="campo-formulario" required>
@@ -322,6 +319,10 @@ session_start(); // Inicia la sesión
                         <option value="php/partituras/5.-Wade In The Water Short (1).pdf">Wade In The Water Short (1).pdf</option>
                         <!-- Agrega más opciones según sea necesario -->
                     </select>
+                    
+                    <!-- Campo oculto para el estado -->
+                    <input type="hidden" name="estado" value="pendiente">
+
                     
                     <input type="submit" value="Descargar Partitura" class="boton-descarga" name="NegroSpirituals" onclick="enviarFormulario()">
 

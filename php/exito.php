@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitud Enviada con Éxito</title>
-    <link rel="stylesheet" href="/PagCentroCultural/css/estilo.css">
+    <link rel="stylesheet" href="../PagCentroCultural/css/estilo.css">
 
 
     <!-- Agrega aquí tus estilos CSS si es necesario -->
@@ -18,7 +18,7 @@
 
         <!-- Puedes agregar más contenido o redireccionar a otras páginas si es necesario -->
         <!-- Botón de regreso -->
-        <a href="/PagCentroCultural/NegroSpirituals.php" class="boton-regresar-exito">Regresar</a>
+        <a href="../PagCentroCultural/NegroSpirituals.php" class="boton-regresar-exito">Regresar</a>
     </div>
 </body>
 </html>

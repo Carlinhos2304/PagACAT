@@ -1326,3 +1326,146 @@ body.exito-php {
 /* fin ADMIN CSS*/
 
 
+/* PANEL ADMIN ADMIN CSS*/
+
+.body-panelAdmin {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Contenedor principal */
+
+.container-panel {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Estilos para la barra lateral */
+
+.sidebar {
+    background-color: #343a40;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+/* Estilos para el contenido principal */
+
+.main-content {
+    flex: 1;
+    overflow-y: auto; /* Hace que el contenido sea desplazable si es necesario */
+    padding: 20px;
+}
+
+/* Estilos adicionales para las secciones */
+
+.seccion-panel {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Lista de solicitudes */
+.lista-solicitudes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.solicitud-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton-procesar {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Lista de partituras */
+.lista-partitura {
+    list-style-type: none;
+    padding: 0;
+}
+
+.partitura-item {
+    margin-bottom: 10px;
+}
+
+.checkbox-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.enviar-partitura-btn {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Lista de notificaciones */
+.notificaciones-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notificaciones-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* Botón de cerrar sesión */
+.cerrar-sesion-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Otros estilos que tenías */
+.body-panelAdmin h2 {
+    color: #009688;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* fin PANEL ADMIN CSS*/
+
+
