@@ -106,13 +106,6 @@ $notificaciones = obtenerNotificaciones($conn);
 </head>
 <body class="body-panelAdmin">
     <div class="container-panel">
-        <!-- Barra lateral -->
-        <div class="sidebar">
-            <h2>Menú</h2>
-            <a href="#gestionSolicitudes">Gestión de Solicitudes</a>
-            <a href="#gestionPartituras">Gestión de Partituras</a>
-            <a href="#notificaciones">Notificaciones</a>
-        </div>
         <!-- Contenido principal -->
         <div class="main-content">
             <h2>Bienvenido al Panel de Administración</h2>
@@ -135,54 +128,55 @@ $notificaciones = obtenerNotificaciones($conn);
                             </li>
                         <?php endforeach; ?>
                     </ul>
-                    <?php else: ?>
-                        <p>No hay solicitudes pendientes.</p>
-                    <?php endif; ?>
-                </div>
+                <?php else: ?>
+                    <p>No hay solicitudes pendientes.</p>
+                <?php endif; ?>
+            </div>
                 
-                <!-- Sección de Gestión de Partituras -->
-                <div id="gestionPartituras" class="seccion-panel">
-                    <h3>Gestión de Partituras</h3>
-                    <?php if (!empty($partituras)): ?>
-                        <form action="../php/enviar_partituras.php" method="POST">
-                            <ul class="lista-partitura">
-                                <?php foreach ($partituras as $partitura): ?>
-                                    <li class="partitura-item">
-                                        <label class="checkbox-label">
-                                            <input type="checkbox" name="partituras[]" value="<?php echo $partitura['id']; ?>">
-                                            <?php echo $partitura['nombre']; ?>
-                                        </label>
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
-                            <!-- Formulario para enviar partituras -->
-                            <button type="submit" class="enviar-partitura-btn">Enviar Partituras Seleccionadas</button>
-                        </form>
-                    <?php else: ?>
-                        <p>No hay partituras disponibles.</p>
-                    <?php endif; ?>
-                </div>
-                
-                <!-- Sección de Notificaciones -->
-                <div id="notificaciones" class="seccion-panel">
-                    <h3>Notificaciones</h3>
-                    <?php if (!empty($notificaciones)): ?>
-                        <ul class="notificaciones-list">
-                            <?php foreach ($notificaciones as $notificacion): ?>
-                                <li class="notificaciones-item">
-                                    <strong><?php echo $notificacion['fecha']; ?></strong>
-                                    <?php echo $notificacion['mensaje']; ?>
+            <!-- Sección de Gestión de Partituras -->
+            <div id="gestionPartituras" class="seccion-panel">
+                <h3>Gestión de Partituras</h3>
+                <?php if (!empty($partituras)): ?>
+                    <form action="../php/enviar_partituras.php" method="POST">
+                        <ul class="lista-partitura">
+                            <?php foreach ($partituras as $partitura): ?>
+                                <li class="partitura-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="partituras[]" value="<?php echo $partitura['id']; ?>">
+                                        <?php echo $partitura['nombre']; ?>
+                                    </label>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
-                    <?php else: ?>
-                        <p>No hay notificaciones.</p>
-                    <?php endif; ?>
-                </div>
-                <form action="../php/logout.php" method="POST">
-                    <button type="submit" class="cerrar-sesion-btn">Cerrar Sesión</button>
-                </form>
+                        <!-- Formulario para enviar partituras -->
+                        <button type="submit" class="enviar-partitura-btn">Enviar Partituras Seleccionadas</button>
+                    </form>
+                <?php else: ?>
+                    <p>No hay partituras disponibles.</p>
+                <?php endif; ?>
             </div>
+                
+            <!-- Sección de Notificaciones -->
+            <div id="notificaciones" class="seccion-panel">
+                <h3>Notificaciones</h3>
+                <?php if (!empty($notificaciones)): ?>
+                    <ul class="notificaciones-list">
+                        <?php foreach ($notificaciones as $notificacion): ?>
+                            <li class="notificaciones-item">
+                                <strong><?php echo $notificacion['fecha']; ?></strong>
+                                <?php echo $notificacion['mensaje']; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php else: ?>
+                    <p>No hay notificaciones.</p>
+                <?php endif; ?>
+            </div>
+            
+            <!-- Botón de cerrar sesión -->
+            <form action="../php/logout.php" method="POST">
+                <button type="submit" class="cerrar-sesion-btn">Cerrar Sesión</button>
+            </form>
         </div>
     </div>
 </body>

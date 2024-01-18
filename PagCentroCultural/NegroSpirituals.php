@@ -312,11 +312,12 @@ session_start(); // Inicia la sesión
                     <!-- Selección de Partitura -->
                     <label for="partitura" class="etiqueta-formulario">Seleccionar Partitura:</label>
                     <select id="partitura" name="partitura" class="campo-formulario" required>
-                        <option value="php/partituras/1 .-I'm Building Me A Home_Walton.pdf">I'm Building Me A Home_Walton.pdf</option>
-                        <option value="php/partituras/2.- I want to go home V2 - Score 2.pdf">I want to go home V2 - Score 2.pdf</option>
-                        <option value="php/partituras/3.- Mary had a baby.pdf">Mary had a baby.pdf</option>
-                        <option value="php/partituras/4.- My Lord What a Morning.pdf">My Lord What a Morning.pdf</option>
-                        <option value="php/partituras/5.-Wade In The Water Short (1).pdf">Wade In The Water Short (1).pdf</option>
+                        <option value="I'm Building Me A Home_Walton.pdf">I'm Building Me A Home_Walton.pdf</option>
+                        <option value="I want to go home V2 - Score 2.pdf">I want to go home V2 - Score 2.pdf</option>
+                        <option value="Mary had a baby.pdf">Mary had a baby.pdf</option>
+                        <option value="My Lord What a Morning.pdf">My Lord What a Morning.pdf</option>
+                        <option value="Wade In The Water Short (1).pdf">Wade In The Water Short (1).pdf</option>
+                        <option value="a.pdf">hola mundo</option>
                         <!-- Agrega más opciones según sea necesario -->
                     </select>
                     

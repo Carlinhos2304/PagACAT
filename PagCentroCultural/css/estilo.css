@@ -1335,6 +1335,7 @@ body.exito-php {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column; /* Cambia a una disposición de columna en lugar de fila */
 }
 
 /* Contenedor principal */
@@ -1345,26 +1346,7 @@ body.exito-php {
     height: 100vh;
 }
 
-/* Estilos para la barra lateral */
 
-.sidebar {
-    background-color: #343a40;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-}
-
-.sidebar a:hover {
-    background-color: #495057;
-}
 
 /* Estilos para el contenido principal */
 
@@ -1383,7 +1365,7 @@ body.exito-php {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    
 }
 
 /* Lista de solicitudes */
@@ -1407,8 +1389,12 @@ body.exito-php {
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+.boton-procesar:hover {
+    background-color: #00796b; /* Cambia el color al pasar el mouse */
+}
 
 /* Lista de partituras */
 .lista-partitura {
@@ -1432,6 +1418,11 @@ body.exito-php {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enviar-partitura-btn:hover {
+    background-color: #00796b; /* Cambia el color al pasar el mouse */
 }
 
 /* Lista de notificaciones */
@@ -1454,6 +1445,11 @@ body.exito-php {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cerrar-sesion-btn:hover {
+    background-color: #1a1a1a; /* Cambia el color al pasar el mouse */
 }
 
 /* Otros estilos que tenías */
@@ -1462,7 +1458,6 @@ body.exito-php {
     text-align: center;
     margin-top: 20px;
 }
-
 
 
 
