@@ -413,10 +413,10 @@ p {
 
 .container-grid{
     display: grid;
-    height: 100vh;
+    height: 60vh;
     margin: 50px 80px;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
     grid-template-areas: 
     "img1 img2 img3 img3 img3"
     "img1 img2 img3 img3 img3";
@@ -426,17 +426,17 @@ p {
 
 .container-grid2{
     display: grid;
-    height: 100vh;
+    height: 90vh;
     margin: 50px 80px;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(7,1fr);
+    grid-template-rows: repeat(6,1fr);
     grid-template-areas: 
-    "img1 img2 img3 img3 img3"
-    "img1 img2 img3 img3 img3"
+    "img2 img2 img3 img3 img3"
+    "img2 img2 img3 img3 img3"
     "img4 img4 img3 img3 img3"
     "img4 img4 img3 img3 img3"
-    "img0 img5 img5 img5 img9"
-    "img0 img5 img5 img5 img9";
+    "img5 img5 img5 img1 img1"
+    "img5 img5 img5 img1 img1";
     gap: 5px;
     z-index: 5;
 }
@@ -462,11 +462,12 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     border-radius: 7px;
 }
 
 .img:hover{
-    filter: grayscale(100%);
+    filter: grayscale(40%);
     cursor: pointer;
     object-fit: cover;
 }
