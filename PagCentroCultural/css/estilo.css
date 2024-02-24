@@ -39,15 +39,29 @@ header{
     padding-top: 20px;
     padding-bottom: 20px;
     bottom: auto;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.8);/*sobra*/
 }
 
+#titulo-galeria{
+    font-size: 3em;
+    width: 34rem;
+    margin:0 auto;
+}
 
+#img-en-galeria{
+    filter: brightness(65%);
+}
 
+#p-galeria{
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: var(--bs-body-font-family);
+    text-shadow:2px 2px 4px rgba(0,0,0,0.8);
+}
 
 .carousel-caption h5{
-    font-size: 3em;
-    
-
+    font-size: 2em;
 }
 .carrusel-indicators{
     z-index: 2;
@@ -338,12 +352,12 @@ p {
     transform: translate(-50%, -50%);
     color: #fff; /* Color del texto */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Sombra al texto para mejor legibilidad */
+    border-radius: 10px;
 }
 
 .titulo-banner {
     font-family: 'Lora', serif; /* Fuente del texto */
     font-weight: bold;
-    font-size: 4em; /* Tamaño del texto */
     margin-bottom: 10px;
 }
 
@@ -363,7 +377,7 @@ p {
     align-items: center;
     height: 100px; /* Ajusta la altura según lo que necesites */
     height: 200px;
-    margin-top: 323px;
+    margin-top: 150px;
 }
 
 
@@ -413,14 +427,14 @@ p {
 
 .container-grid{
     display: grid;
-    height: 60vh;
+    height: 80vh;
     margin: 50px 80px;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-template-areas: 
     "img1 img2 img3 img3 img3"
     "img1 img2 img3 img3 img3";
-    gap: 5px;
+    gap: 13px;
     z-index: 5;
 }
 
@@ -437,7 +451,7 @@ p {
     "img4 img4 img3 img3 img3"
     "img5 img5 img5 img1 img1"
     "img5 img5 img5 img1 img1";
-    gap: 5px;
+    gap: 13px;
     z-index: 5;
 }
 
@@ -454,7 +468,7 @@ p {
     "img4 img4 img3 img3 img3"
     "img6 img6 img5 img5 img5"
     "img6 img6 img5 img5 img5";
-    gap: 5px;
+    gap: 15px;
     z-index: 5;
 }
 
@@ -470,6 +484,7 @@ p {
     filter: grayscale(40%);
     cursor: pointer;
     object-fit: cover;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.8);/*sobra*/
 }
 
 .img-1{
